@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+h1,h2{
+    font-weight:bold;
+    line-height: 1.2;
+    font-size: 40px;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to right, #0088cc, #229ed9);
+    z-index: 9;
+}
+
+nav > ul{
+    padding-right: 55px;
+    list-style-type: none;
+    display: flex;
+}
+
+.header li{
+    padding: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header h2{
+    font-size:30px;
+}
+
+#home-page{
+    height: 150vh;
+    background-image: linear-gradient(to right, #0088cc, #229ed9);
+    background-size: 100vw 90vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.svg{
+    position: relative;
+    top:55vh;
+    z-index: 0;
+    height: 45vh;
+}
+
+#home-page h1{
+    text-align: center;
+    position: relative;
+    top:-100px;
+    font-size: 70px;
+    color:#fff;
+}
+
+.platforms{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 6;
+    position: relative;
+    justify-content:center;
+    gap:50px;
+    align-items:center;
+}
+
+.platforms div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    z-index: 6;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    margin: 10px;
+    color: #333;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    transform: scale(0.97);
+}
+
+.twitter .btn{
+    background: #0088cc;
+}
+
+.telegram .btn{
+    background: #229ed9;
+}
+
+.reddit .btn{
+    background: #ff4500;
+}

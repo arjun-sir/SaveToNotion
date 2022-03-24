@@ -383,3 +383,9 @@ footer a{
         top:63vh;
     }
 }
+
+@media (max-width:450px){
+    .svg{
+        top:66vh;
+    }
+}

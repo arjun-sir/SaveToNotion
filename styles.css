@@ -371,4 +371,15 @@ footer a{
     .socials img{
         margin:0 30px;
     }
+
+    #mail-list{
+        margin-top:-80px;
+        padding-top: 80px;
+    }
+}
+
+@media (max-width:600px) {
+    .svg{
+        top:63vh;
+    }
 }

@@ -78,7 +78,7 @@ nav a:hover {
     position: relative;
     top:55vh;
     min-height: 45vh;
-    max-width: 98.7vw;
+    max-width: 100%;
 }
 
 #home-page h1, #home-page p{
@@ -229,7 +229,7 @@ form{
 }
 
 .form-control{
-    width: 40%;
+    width: 50%;
 }
 
 .form-control input{
@@ -294,4 +294,81 @@ footer a{
     background-color: #fff;
     border-radius: 50%;
     margin: 0 10px;
+}
+
+/************ RESPONSIVENESS *************/
+
+@media(max-width: 800px) {
+    .svg{
+        top:60vh;
+        width: 100%;
+    }    
+
+    .platforms {
+        grid-template-columns: 1fr;
+    }
+
+    .platforms div{
+        margin: 0 auto;
+    }
+
+    .screenshots{
+        grid-template-columns: 1fr;
+    }
+
+    .screenshots > *:first-child{
+        grid-column: auto;
+    }  
+    
+    .screenshots > *:nth-child(2){
+        grid-row: auto;
+    }
+    
+    .screenshots > *:nth-child(3){
+        grid-row: auto;
+    }
+    
+    .screenshots > *:nth-child(4){
+        grid-column:auto;
+    }
+    
+    .header div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header{
+        position: static;
+    }
+
+    .header ul{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #home-page h1{
+        top:-200px
+    }
+
+    #home-page p{
+        top:-200px;
+        font-size: 25px;
+    }
+
+    .form-control{
+        width: 80%;
+    }
+
+    footer div{
+        flex-direction: column;
+    }
+
+    .socials{
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .socials img{
+        margin:0 30px;
+    }
 }

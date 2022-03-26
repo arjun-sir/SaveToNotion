@@ -69,14 +69,14 @@ nav a:hover {
 }
 
 #home-page{
-    background-image: linear-gradient(to bottom, #0088cc, #78DEC7);
-    background-size: 100% 90vh;
+    background-image: linear-gradient(to bottom, #0088cc, #0088cc);
+    background-size: auto 650px;
     background-repeat: no-repeat;
 }
 
 .svg{
     position: relative;
-    top:55vh;
+    top:65vh;
     min-height: 45vh;
     max-width: 100%;
 }
@@ -85,7 +85,7 @@ nav a:hover {
     text-align: center;
     position: relative;
     top:-170px;
-    font-size: 60px;
+    font-size: 75px;
     color:#fff;
 }
 
@@ -100,9 +100,9 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     z-index: 6;
     position: relative;
-    top:-100px;
+    top: -75px;
     justify-content:space-between;
-    gap:40px;
+    gap: 60px;
     align-items:center;
 }
 
@@ -117,7 +117,7 @@ nav a:hover {
 
 .card {
     background-color: #fff;
-    width:285px;
+    max-width: 315px;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 40px 20px;
@@ -219,6 +219,7 @@ nav a:hover {
     font-size: 17px;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 form{
@@ -261,8 +262,37 @@ form{
 
 
 #contact-us a{
-    color: blue;
-    text-decoration: underline;
+    color:#78DEC7;
+}
+
+#contact-us a:hover{
+    color: #0088cc;
+}
+
+.contact-cards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-team, .contact-founder{
+    display: flex;
+    height: 250px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #b4becb 1px solid;
+}
+
+.contact-team p, .contact-founder p{
+    margin:0 !important;
+    margin-bottom: 10px !important;
+}
+
+.contact-team h4, .contact-founder h4{
+    margin-bottom: 40px;
 }
 
 /************* FOOTER ***********/
@@ -300,7 +330,7 @@ footer a{
 
 @media(max-width: 800px) {
     .svg{
-        top:60vh;
+        top:70vh;
         width: 100%;
     }    
 
@@ -333,7 +363,6 @@ footer a{
     }
     
     .header div{
-        flex-direction: column;
         text-align: center;
     }
 
@@ -343,7 +372,6 @@ footer a{
 
     .header ul{
         text-align: center;
-        flex-direction: column;
     }
 
     #home-page h1{
@@ -376,16 +404,53 @@ footer a{
         margin-top:-80px;
         padding-top: 80px;
     }
+
+    .platforms .card{
+        width: 320px !important;
+    }
+
+    .contact-cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-founder, .contact-team{
+        width:80%;
+    }
 }
 
 @media (max-width:600px) {
     .svg{
-        top:63vh;
+        top:70vh;
+    }
+    header{
+        display: none;
+    }
+    #home-page h1{
+        margin-bottom: 40px;
+        font-size: 53px;
+    }
+    #home-page p{
+        font-size: 18px;
+    }
+
+    .platforms .card{
+        width: 300px !important;
     }
 }
 
 @media (max-width:450px){
     .svg{
-        top:66vh;
+        top:72vh;
+    }
+
+    #home-page h1{
+        font-size: 40px !important;
+    }
+    #home-page p{
+        font-size: 17px;
+    }
+    .platforms .card{
+        width: 275px !important;
     }
 }

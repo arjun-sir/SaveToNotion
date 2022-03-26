@@ -415,8 +415,9 @@ footer a{
     }
 
     .contact-founder, .contact-team{
-        width:80%;
+        width: 80%;
     }
+
 }
 
 @media (max-width:600px) {
@@ -429,6 +430,7 @@ footer a{
     #home-page h1{
         margin-bottom: 40px;
         font-size: 53px;
+        font-weight: bold;
     }
     #home-page p{
         font-size: 18px;
@@ -437,20 +439,25 @@ footer a{
     .platforms .card{
         width: 300px !important;
     }
+
 }
 
 @media (max-width:450px){
     .svg{
-        top:72vh;
+        top:70vh;
     }
 
     #home-page h1{
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
     #home-page p{
         font-size: 17px;
     }
     .platforms .card{
         width: 275px !important;
+    }
+
+    .contact-founder h4, .contact-team h4{
+        font-size: 15px;
     }
 }

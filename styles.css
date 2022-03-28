@@ -76,9 +76,7 @@ nav a:hover {
 
 .svg{
     position: relative;
-    top:65vh;
-    height: 45vh;
-    max-width: 100%;
+    top:450px;
 }
 
 #home-page h1, #home-page p{
@@ -338,9 +336,15 @@ footer a{
 
 /************ RESPONSIVENESS *************/
 
+@media (max-width: 900px) {
+    .svg{
+        top: 500px !important;
+    }
+}
+
 @media(max-width: 800px) {
     .svg{
-        top: 65vh !important;
+        top: 520px !important;
         width: 100%;
     }    
 
@@ -385,13 +389,17 @@ footer a{
         text-align: center;
     }
 
+    #home-page{
+        margin-bottom: 70px;
+    }
+
     #home-page h1{
-        top:-200px
+        top:-120px;
     }
 
     #home-page p{
-        top:-200px;
         font-size: 25px;
+        top:-120px;
     }
 
     .form-control{
@@ -433,11 +441,15 @@ footer a{
         width: 80%;
     }
 
+    .platforms{
+        top:0px;
+    }
+
 }
 
 @media (max-width:600px) {
     .svg{
-        top:70vh !important;
+        top:550px !important;
     }
     header{
         display: none;
@@ -446,29 +458,39 @@ footer a{
         margin-bottom: 40px;
         font-size: 53px;
         font-weight: bold;
+        top: -80px;
     }
     #home-page p{
         font-size: 18px;
+        top:-80px
+    }
+
+    #home-page{
+        margin-bottom: 120px;
     }
 
     .platforms .card{
         width: 320px !important;
     }
 
+    .platforms{
+        top:50px;
+    }
+
 }
 
 @media (max-width:450px){
     .svg{
-        top:70vh !important;
+        top:580px !important;
     }
 
     #home-page h1{
         font-size: 40px !important;
-        top: -220px;
+        top: -30px;
     }
     #home-page p{
         font-size: 17px;
-        top: -220px;
+        top: -30px;
     }
     .platforms .card{
         width: 300px !important;
@@ -476,5 +498,13 @@ footer a{
 
     .contact-founder h4, .contact-team h4{
         font-size: 15px;
+    }
+
+    .platforms{
+        top:50px;
+    }
+
+    #home-page{
+        margin-bottom: 150px;
     }
 }

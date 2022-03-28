@@ -77,7 +77,7 @@ nav a:hover {
 .svg{
     position: relative;
     top:65vh;
-    min-height: 45vh;
+    height: 45vh;
     max-width: 100%;
 }
 

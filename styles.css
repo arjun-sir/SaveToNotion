@@ -177,29 +177,39 @@ nav a:hover {
 
 .screenshots{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 50px;
     row-gap: 40px;
 }
 
 .screenshots div{
-    background: url(./images/bulbs.png) 600px 600px;
+    border: #0088cc 3px solid;
+    border-radius: 5px;
+}
+
+.screenshots a{
+    transition: transform 0.2s ease-in;
+}
+
+.screenshots a:hover{
+    transform:scale(1.02);
 }
 
 .screenshots > *:first-child{
-    grid-column: 1/ span 2;
-}  
+    grid-column: 1/ span 5;
+}
 
 .screenshots > *:nth-child(2){
-    grid-row: 2/ span 3;
+    grid-column: 6 / span 8;
 }
 
 .screenshots > *:nth-child(3){
-    grid-row: 2/ span 3;
+    grid-column: 2/span 6;
 }
 
 .screenshots > *:nth-child(4){
-    grid-column: 1/ span 2;
+    grid-row: 3;
+    grid-column: 4/span 7;
 }
 
 /****** mail-list & contact-us **********/
@@ -330,7 +340,7 @@ footer a{
 
 @media(max-width: 800px) {
     .svg{
-        top:70vh;
+        top: 65vh !important;
         width: 100%;
     }    
 
@@ -348,18 +358,19 @@ footer a{
 
     .screenshots > *:first-child{
         grid-column: auto;
-    }  
+    }
     
     .screenshots > *:nth-child(2){
-        grid-row: auto;
+        grid-column: auto;
     }
     
     .screenshots > *:nth-child(3){
-        grid-row: auto;
+        grid-column: auto;
     }
     
     .screenshots > *:nth-child(4){
-        grid-column:auto;
+        grid-column: auto;
+        grid-row: auto;
     }
     
     .header div{
@@ -389,6 +400,10 @@ footer a{
 
     footer div{
         flex-direction: column;
+    }
+
+    footer{
+        padding-bottom: 20px;
     }
 
     .socials{
@@ -422,7 +437,7 @@ footer a{
 
 @media (max-width:600px) {
     .svg{
-        top:70vh;
+        top:70vh !important;
     }
     header{
         display: none;
@@ -437,24 +452,26 @@ footer a{
     }
 
     .platforms .card{
-        width: 300px !important;
+        width: 320px !important;
     }
 
 }
 
 @media (max-width:450px){
     .svg{
-        top:70vh;
+        top:70vh !important;
     }
 
     #home-page h1{
-        font-size: 35px !important;
+        font-size: 40px !important;
+        top: -220px;
     }
     #home-page p{
         font-size: 17px;
+        top: -220px;
     }
     .platforms .card{
-        width: 275px !important;
+        width: 300px !important;
     }
 
     .contact-founder h4, .contact-team h4{

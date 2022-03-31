@@ -334,6 +334,30 @@ footer a{
     margin: 0 10px;
 }
 
+/*********** ANIMATIONS ****************/
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.twitter{
+    animation: slideInFromBottom 1s ease-out;
+}
+
+.telegram{
+    animation: slideInFromBottom 2s ease-out;
+}
+
+.reddit{
+    animation: slideInFromBottom 3s ease-out;
+}
+
 /************ RESPONSIVENESS *************/
 
 @media (max-width: 900px) {

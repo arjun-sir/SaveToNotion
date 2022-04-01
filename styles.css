@@ -190,7 +190,7 @@ nav a:hover {
 }
 
 .screenshots a:hover{
-    transform:scale(1.02);
+    transform:scale(1.03);
 }
 
 .screenshots > *:first-child{
@@ -233,7 +233,7 @@ nav a:hover {
 form{
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     margin: 30px;
 }
 
@@ -250,24 +250,31 @@ form{
     background: #78DEC7;
     border: 1px solid #78DEC7;
     color: #333;
-    font-size: 19px;
+    font-size: 20px;
     margin: 0;
-    margin-left: 10px;
-    height: 50px;
+    margin-left: 30px;
+    height: 60px;
+    width: 120px;
+    text-align: center;
 }
 
-.form-control input[type="email"] {
+.form-control input[type="email"], .form-control input[type="text"] {
     border: none;
     border-bottom: 1px solid #b4becb;
     width: 100%;
     padding: 3px;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .form-control input:focus {
     outline: none;
 }
 
+#contact-us{
+    margin-top: -90px;
+    padding-top: 90px;
+}
 
 #contact-us a{
     color:#78DEC7;
@@ -427,7 +434,7 @@ footer a{
     }
 
     .form-control{
-        width: 80%;
+        width: 100%;
     }
 
     footer div{
@@ -452,6 +459,12 @@ footer a{
         padding-top: 80px;
     }
 
+    #mail-list .btn{
+        align-self: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+
     .platforms .card{
         width: 320px !important;
     }
@@ -467,6 +480,11 @@ footer a{
 
     .platforms{
         top:0px;
+    }
+
+    
+    form{
+        flex-direction: column;
     }
 
 }

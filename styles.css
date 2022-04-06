@@ -371,6 +371,14 @@ footer a{
     .svg{
         top: 500px !important;
     }
+
+    #home-page h1, #home-page p{
+        top:-140px;
+    }
+
+    .platforms{
+        gap: 30px !important;
+    }
 }
 
 @media(max-width: 800px) {

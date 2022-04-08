@@ -113,12 +113,13 @@
                 <h2>Subscribe to our mailing list:</h2>
                 <p>Get updates, coupons, tips and tricks and to our products - and future ones. Definitely not something you would wanna miss!
                 </p>
-                <form action="https://abdulhade.tech/tools/stn_mailing_list" method="POST">
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                <form action="https://abdulhade.tech/tools/stn_mailing_list" method="POST" target="dummyframe" id="myForm">
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Enter your Name (optional)">
                         <input type="email" name="email" placeholder="Enter your email address (required)" required>
                     </div>
-                    <input type="submit" value="Subscribe" class="btn">
+                    <input type="submit" value="Subscribe" class="btn" onclick="myFunction()">
                 </form>
             </div>
         </section>
@@ -160,4 +161,12 @@
             </div>
         </footer>
 </body>
+
+<script>
+    function myFunction() {
+    alert("Thanks for subscribing to our mailing list !");
+    window.location.reload();
+}
+</script>
+
 </html>

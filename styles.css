@@ -70,7 +70,7 @@ nav a:hover {
 
 #home-page{
     background-image: linear-gradient(to bottom, #0088cc, #0088cc);
-    background-size: auto 650px;
+    background-size: 100% 650px;
     background-repeat: no-repeat;
 }
 
